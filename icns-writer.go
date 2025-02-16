@@ -81,10 +81,10 @@ func IcnsWrite(icons []Icon, path string) error {
 			icon_header.Type..., // Icon type
 		)
 		icns = append(icns,
-			uint32ToBytesBigEndian(icon_header.BlockLength)...,
+			uint32ToBytesBigEndian(icon_header.BlockLength)..., // Block length
 		)
 		icns = append(icns,
-			icon.Data...,
+			icon.Data..., // Icon data
 		)
 	}
 
