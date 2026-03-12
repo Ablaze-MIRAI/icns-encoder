@@ -1,5 +1,5 @@
 module icns-encoder
 
-go 1.24.0
+go 1.25.0
 
-require golang.org/x/image v0.36.0
+require golang.org/x/image v0.37.0
